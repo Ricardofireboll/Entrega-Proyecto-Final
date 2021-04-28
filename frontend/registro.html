@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse|Linkedln</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/6100538424.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Formulario de registro -->
+    <div id="registro" style="background-color:#F3F2EF; ">
+
+        <!-- Correo y contraseña -->
+        <div id="registroPagina-1" style="display: block;">
+            <img class="logo-registro" src="img/Linkedin-Logo.png">
+            <h1 style="font-size: 32px; text-align: center;">Saca el máximo partido a tu vida profesional</h1>
+            <section id="Formulario-registro" style="margin-bottom: 30px;">
+                <span style="color: #adadad;">Email</span>
+                <input id="txt-email" class=" caja-texto" style="font-size: 15px; margin-top: 0;padding: 5px; margin-bottom: 20px;" type="text" >
+                <span style="color:#adadad">Contraseña (6 o más caracteres)</span>
+                <input id="txt-password" class=" caja-texto" style="font-size: 15px; margin-top: 0;margin-bottom: 15PX; padding: 5px;" type="password" >
+                <span style="font-size: 12px; color: #adadad;"> Al hacer clic en «Aceptar y unirse», aceptas las <a href="">Condiciones de uso</a> , la <a href="">Política de privacidad</a> y la <a href="">Política de cookies</a>  de LinkedIn.</span>
+                <input id="btn-iniciar" style="font-weight: 700;    margin-bottom: 60px" class=" btn" type="button" value="Aceptar y unirse" onclick="ventanaNombre()" >
+                
+                <div>
+                    <button id="btn-Google"><img style="width: 20px;margin-right: 15px;" src="img/G.png" alt="Error">Registrate con Google</button>
+                        <span style="margin-left: 25px;">¿Ya eres usuario de Linkedln?</span>
+                        <a href="login.html"><input id="btn-contaseña" class=" btn" type="button" value="Iniciar sesión"></a>               
+                </div>
+            </section>
+        </div>
+
+        <!-- Nombre y apellido -->
+        <div id="registroPagina-2" style="display: none;">
+            <img class="logo-registro" src="img/Linkedin-Logo.png">
+            <h1 style="font-size: 32px; text-align: center;">Saca el máximo partido a tu vida profesional</h1>
+            <section id="Formulario-registro" style="margin-bottom: 30px;">
+                <span style="color: #adadad;">Nombre</span>
+                <input id="txt-nombre" class=" caja-texto" style="font-size: 15px; margin-top: 0;padding: 5px; margin-bottom: 20px;" type="text" >
+                <span style="color:#adadad">Apellidos</span>
+                <input id="txt-apellidos" class=" caja-texto" style="font-size: 15px; margin-top: 0;margin-bottom: 15PX; padding: 5px;" type="text" >
+                
+                <input id="btn-iniciar" style="font-weight: 700;    margin-bottom: 60px" class=" btn" type="button" value="Continuar" onclick="ventanaPais()"> 
+                
+            </section>
+        </div>
+
+        <!-- pais y region -->
+        <div id="registroPagina-3" style="display: none;">
+            <img style="width: 130px; margin-left: 10%;" src="img/Linkedin-Logo.png">
+            <h1 id="titulo-bienvenida" style="font-size: 32px; text-align: center;"></h1>
+            <section id="Formulario-registro" style="margin-bottom: 30px;">
+                <span style="color: #adadad;">pais</span>
+                <input id="txt-pais" class=" caja-texto" style="font-size: 15px; margin-top: 0;padding: 5px; margin-bottom: 20px;" type="text" >
+                <span style="color:#adadad">Ciudad</span>
+                <input id="txt-ciudad" class=" caja-texto" style="font-size: 15px; margin-top: 0;margin-bottom: 15PX; padding: 5px;" type="text" >
+                
+                <input id="btn-iniciar" style="font-weight: 700;    margin-bottom: 60px" class=" btn" type="button" value="Siguiente" onclick="ventanaCarrera()"> 
+                
+            </section>
+        </div>
+
+        <!-- carrera -->
+        <div id="registroPagina-4" style="display: none;">
+            <img style="width: 130px; margin-left: 10%;" src="img/Linkedin-Logo.png">
+            <h1 style="font-size: 32px; text-align: center;">Tu perfil te ayuda a descubrir nuevas oportunidades y <br>personas</h1>
+            <section id="Formulario-registro" style="margin-bottom: 30px;">
+                <span style="color: #adadad;">Intitucion educativa</span>
+                <input id="txt-institucionEducativa" class=" caja-texto" style="font-size: 15px; margin-top: 0;padding: 5px; margin-bottom: 20px;" type="text" >
+                <span style="color:#adadad">Titulo</span>
+                <input id="txt-titulo" class=" caja-texto" style="font-size: 15px; margin-top: 0;margin-bottom: 15PX; padding: 5px;" type="text" >
+                <span style="color:#adadad">Especializacion</span>
+                <input id="txt-especializacion" class="caja-texto" style="font-size: 15px; margin-top: 0;margin-bottom: 15PX; padding: 5px;" type="text" >
+                
+                <div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span style="color:#adadad">Fecha de inicio</span>
+                            <select id="añoI" class="form-control
+                            ">
+                                
+                            </select>
+                            
+                        </div>
+
+                        <div class="col-6">
+                            <span style="color:#adadad">Fecha de finalización</span>
+                            <select id="añoF" class="form-control">
+                                
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <input id="btn-iniciar" style="font-weight: 700;    margin-bottom: 60px" class=" btn" type="button" value="Aceptar y continuar" onclick=""> 
+                
+            </section>
+        </div>
+
+
+        <!-- Footer -->
+    <div class="row footer" style="margin: 0;padding-left: 150px;padding-right: 100px;" >
+        <div style="bottom: auto; position: absolute;" id="footer">
+            <img src="img/Linkedin-LogoBlack.png" alt="Error" style="width: 60px;">
+            <span style="font-size: 12px; padding: 4px;">  ©2021 </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Acerca de </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Accesibilidad </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Condiciones de uso </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Políticas de privacidad</span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Política de cookies</span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Política de copyright </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Política de marca </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Política de marca </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Política de marca </span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Directrices comunitarias</span>
+            <span class="hiper" style="font-size: 12px; padding: 4px;">  Idioma</span>
+        </div>
+    </div>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="js/controladores.js"></script>
+    
+</body>
+</html>
